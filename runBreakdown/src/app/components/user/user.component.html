@@ -1,0 +1,51 @@
+<div align="center">
+<h1>Tempo Breakdown</h1>
+
+<div>
+  <form>
+    <div>
+      <label for="name">Mileage: (Example 7 or 4.82) </label><br>
+      <input type="text" [(ngModel)]="mileage" name="mileage">
+    </div>
+    <div>
+      <label for="name">Run Time in Minutes:</label><br>
+      <input type="text" [(ngModel)]="time" name="time">
+    </div>
+  </form>
+</div>
+
+<button (click)="calcPace()">Calculate</button>
+
+<h2>Breakdown</h2>
+
+<p>You ran {{mileageClick}} miles at {{pace}} minutes/mile average pace.</p>
+<p>Keeping that average pace, you can run:</p>
+
+<style>
+  table, th, td {
+      border: 1px solid black;
+  }
+</style>
+<table style="width:40%">
+  <tr>
+    <th>Event</th>
+    <th>Time (in Minutes)</th> 
+  </tr>
+  <tr>
+    <td>5K</td>
+    <td>{{fivePlaceholder}}</td> 
+  </tr>
+   <tr>
+    <td>10K</td>
+    <td>{{tenPlaceholder}}</td> 
+  </tr>
+   <tr>
+    <td>Half Marathon</td>
+    <td>{{halfPlaceholder}}</td> 
+  </tr>
+   <tr>
+    <td>Marathon</td>
+    <td>{{fullPlaceholder}}</td> 
+  </tr>
+</table>
+</div>
