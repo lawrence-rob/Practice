@@ -1,6 +1,11 @@
 # RunBreakdown
 
+## Purpose
+
+Practice the fundamentals of Angular 4 by creating a calculator that takes your run distance and time spent to calculate your average pace, and if you were to keep that average pace what time you would finish at in a 5K, 10K, Half Marathon, and Marathon.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+
 
 ## Development server
 
