@@ -1,0 +1,6 @@
+{% extends "personal/header.html" %}
+{% block content %}
+	{% for post in object_list %}
+		<h7>{{ post.date|date:"m-d-Y" }}</h7> <h4>{{ post.title }} Miles</h4>
+	{% endfor %}
+{% endblock %}
